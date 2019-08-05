@@ -50,7 +50,8 @@ class App extends Component {
     switch(op) {
       case "DEL":
           this.setState({
-            resultText: ""
+            resultText: "",
+            calculatedText: ""
           })
           break
       default:
@@ -112,7 +113,7 @@ const styles = StyleSheet.create({
     flex: 1
   },
   resultText: {
-    fontSize: 40,
+    fontSize: 60,
   },
   btntext: {
     fontSize: 32,
@@ -127,7 +128,7 @@ const styles = StyleSheet.create({
 
   btnOperations: {
     color: 'white',
-    fontSize: 32
+    fontSize: 30
   },
 //  calculatedText
   row: {
@@ -143,7 +144,8 @@ const styles = StyleSheet.create({
   },
   calculation: {
     flex:1,
-    backgroundColor: '#72a6fb'
+    backgroundColor: '#72a6fb',
+    alignItems: 'flex-end'
   },
   buttons: {
     flex: 7,
